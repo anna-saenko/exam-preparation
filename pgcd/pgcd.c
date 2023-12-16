@@ -2,6 +2,14 @@
 
 int	pgcd(int a, int b)
 {
+	if (a < 0)
+	{
+		a = -a;
+	}
+	if (b < 0)
+	{
+		b = -b;
+	}
 	while (a != b)
 	{
 		if (a > b)
@@ -18,5 +26,5 @@ int	pgcd(int a, int b)
 
 int	main(void)
 {
-	printf("%d\n", pgcd(42, 12));
+	printf("%d\n", pgcd(81, -153));
 }
